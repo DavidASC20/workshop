@@ -76,7 +76,17 @@ class2 = [
     "hhuang20"
 ]
 
-random_class = random.choice([class1, class2]);
-random_student = random.choice(random_class);
 
-print(random_student);
+def random_student():
+    val = input("Which class? class1 or class2\n")
+    if(val == "class1"):
+        print(random.choice(class1))
+    elif(val == "class2"):
+        print(random.choice(class2))
+    else:
+        random_class = random.choice([class1, class2])
+        print(random.choice(random_class))
+        
+        
+
+random_student()
