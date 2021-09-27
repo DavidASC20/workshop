@@ -4,9 +4,9 @@
 #2021-09-25
 
 #SUMMARY OF TRIO DISCUSSION
-#Roshani and I shared our code and looked at each others, seeing what was good about the others.
+#We all shared our code and looked at each others, seeing what was good about the others.  We then went on trying to implement dictionaries into our code, struggling a little, but eventually gettingh it.
 #DISCOVERIES
-#Roshani discovered the random.choice() function, which helped me condense my code.
+#Learned about dictionaries, which help condense lists.  Also learned that python2 was defaulted on Roshanis computer, so we changed that.
 #QUESTIONS
 #the change of adding both lists into classes led me to wonder how to access the class1 and class2.
 #COMMENTS
@@ -35,7 +35,7 @@ def random_student():
     elif(val == "class2"):
         print(random.choice(KREWES["class2"]))
     else:
-        random_class = random.choice(KREWES["class1", class2])
+        random_class = random.choice([KREWES['class1'], KREWES['class2']])
         print(random.choice(random_class))
         
         
