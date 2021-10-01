@@ -1,5 +1,7 @@
-Magnificent Robot Mouse
-David, Sophie, Jessie
+Magnificent Robot Mouse - David, Sophie, Jessie
+SoftDev
+K08: Cross Pollination and Virtual Insanity
+2021-09-30
 Questions 
 I had a question for Sophies code, as I didnt really understand why she read the files in the way that she did, and I am not really sure on how the split function works
 Comments
