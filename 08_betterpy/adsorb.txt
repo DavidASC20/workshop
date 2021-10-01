@@ -1,0 +1,9 @@
+Magnificent Robot Mouse
+David, Sophie, Jessie
+Questions 
+I had a question for Sophies code, as I didnt really understand why she read the files in the way that she did, and I am not really sure on how the split function works
+Comments
+I liked the simplicity of Sophie's code, and I liked how simplistic her print statement was
+I liked that Jessie actually coded out the weighted portion, as seeing it in code made it easier to understand, instead of just using a function.
+Concerns
+Im wonderirng if the goal of looking at other peoples work is to see their thought processes while they are coding, or to learn shortcuts that you could use yourself.  Maybe a little bit of both?
