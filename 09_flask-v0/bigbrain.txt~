@@ -1,0 +1,14 @@
+The Bionic Brains Pd2
+Soft Dev
+K<09> Starting off with Flask
+2021-10-01
+
+Q0 - We have seen similar syntax in java, where we make something a class.  For example, last year we had to create a SuperArray class.  We would call it by saying X = new Superarray().
+
+Q1 - We have 2 points of reference for the meaning of '/'.  I said that it could be for files, because each branch of the file has another slash.  For example ~/workshop/09_flask-v0.  However, Wen Hao said that it could be the url instead, because each page has their own /.  I feel this is more feasible because we are working with websites.
+
+Q2 - We actually werent sure, I thought that it would be on the website, but Wen Hao thought it might just be on the terminal.  I thought it would be whatever u set it as, where Wen Hao also believed it could be _main_.
+
+Q3 - I thought that it wouldnt print anything.  I thought this because there is nothing to print out or return.  Wen Hao thought that it would return the html data sent to the user, so it would show the text in the web browser if you go to the site.  He said that it was just a guess.
+
+Q4 - Wen Hao and I have only seen this in python before, we havent seen similar constructs in other languages
