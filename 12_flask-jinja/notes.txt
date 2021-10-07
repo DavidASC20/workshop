@@ -1,0 +1,21 @@
+The Fabulous Frogs(David Chong, Wen Hao Dong, Austin Ngan)
+Soft Dev
+K12 -- Flask Templates
+2021-10-07
+
+Predictions/Notes
+
+Q0: Removing the render_template from the import will make the test_templt function
+break, because the function calls render_template, and without it the function
+will not be able to run.
+
+Q1: We predict the url to load the page would be https://localhost:5000/my_foist_template"
+
+Q2:The first parameter is the filename of the template.  The named parameters
+"foo" and "collection" will be used as variables in the template files, and the {{ foo }} in the template
+will be replaced with "fooooo" and the {% for item in collection %} will use the
+list {0,1,1,2,3,5,8}
+
+Notes:
+The model_tmplt.html file contains {%for item in collection %} which seems
+related to python's for loop, and {%endfor%} is the end of the loop.
