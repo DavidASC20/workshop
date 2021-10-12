@@ -19,3 +19,6 @@ list {0,1,1,2,3,5,8}
 Notes:
 The model_tmplt.html file contains {%for item in collection %} which seems
 related to python's for loop, and {%endfor%} is the end of the loop.
+
+Observations: All of our observations were generally correct.  fooooo is the title on top of the window,
+and the list is displayed as expected. 
