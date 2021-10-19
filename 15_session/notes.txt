@@ -1,0 +1,23 @@
+Team F^2: Michael Borczuk, Yuqing Wu, David Chong
+SoftDev
+K14 -- Form and Function
+2021-10-14
+
+Observation from console for 14
+- In console there's error method about not finding the icon. 
+- In the network section there's similar information with what's being printed in the console by flask everytime we reload. 
+- We can see how the program uses memory in the memory section by taking a snapshot
+- Inspector allow us to mess around with the html on the site. 
+
+
+Plan on writing code
+- To start, we have login.html and app.py from HW 14
+- Need to make a conditional
+- Three different ways it can pan out, wrong username, wrong password, and correct
+- Need the response.html to have a variable for the string returned
+- If wrong user, return username not found
+- Else If wrong pass, return password not found
+- Else, return welcome message
+- SIDE NOTE, obv this wont work with an actual website, most say passworrd and or username is unrecognized,
+but for the homework, since it is hardcoded, that is what we should do.
+- Need error handling for different ways people could send in the requests(?) bit unsure of this and error handling in general.
