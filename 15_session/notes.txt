@@ -21,3 +21,11 @@ Plan on writing code
 - SIDE NOTE, obv this wont work with an actual website, most say passworrd and or username is unrecognized,
 but for the homework, since it is hardcoded, that is what we should do.
 - Need error handling for different ways people could send in the requests(?) bit unsure of this and error handling in general.
+
+
+
+Observations:
+- Cannot create session without key
+- Session key and value can be whatever you want, but username isnt stored
+anywhere else, so good idea to store in session dictionarry.
+-Templates are extremely versatile.
