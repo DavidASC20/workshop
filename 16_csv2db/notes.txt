@@ -22,3 +22,7 @@ Notable Notes:
 For parameters when creating tables, need the type of parameter in all caps,
 like TEXT and INTEGER.
 For shell use, must use ";" at the end.
+
+
+Chart made from Class: insert inputs to database and select brrings it back to the sqlite shell.
+data from csv goes to database and c.fetchall goes back into python
