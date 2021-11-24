@@ -1,0 +1,14 @@
+David Chong
+SoftDev pd2
+K18 -- CSS basics
+2021-11-23
+
+Notes:
+
+Overall, pretty good assignment.  
+
+Couple notable notes
+internal and external are basically same
+reference to class with .class
+reference to id with .id
+divs can be used for separation
