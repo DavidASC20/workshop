@@ -1,0 +1,10 @@
+Knoteem, David Chong and Shadman Rakib
+Soft Dev 
+k19 - Rest API work
+2020-11-23
+
+Overall, Assignment was good
+
+Notable notes:
+must import json and urllib.request
+first open link as response, then read it and make into dictionary.  U can then send to template for further meddling.
