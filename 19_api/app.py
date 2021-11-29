@@ -1,3 +1,11 @@
+from ssl import DefaultVerifyPaths
+
+
+# Knoteem, David Chong and Shadman Rakib
+# Soft Dev 
+# k19 - Rest API work
+# 2020-11-23
+
 from flask import Flask
 from flask import render_template
 import json
