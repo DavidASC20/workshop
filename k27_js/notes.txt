@@ -5,14 +5,14 @@ K27 -- Basic functions in JavaScript
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
+I didnt really understand how the js worked, but realizing that you can flip the function and function name made 
+it extremely helpful.  I just wish I realized before I had to ask for help, but that is alright
+
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
+I still dont understand the arrow key syntax, but I do not see a way in which 
+it would be more useful than the function calling itself.
 =================================================================
 

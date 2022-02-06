@@ -12,7 +12,7 @@
 
 //Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
 
-function factorial(n){
+factorial = function(n){
     if(n == 1){
         return 1;
     }else{
@@ -27,3 +27,6 @@ function fib(n){
         return (fib(n-1) + fib)
     }
 }
+
+
+console.log(factorial(7));
