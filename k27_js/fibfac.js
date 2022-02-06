@@ -1,4 +1,4 @@
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
+// Team Phantom Tollbooth :: David, Aaron
 // SoftDev pd0
 // K27 -- Basic functions in JavaScript
 // 2022-02-03r
