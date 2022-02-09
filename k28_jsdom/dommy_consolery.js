@@ -84,13 +84,6 @@ var stripe = function() {
   }
 };
 
-
-addItem(i);
-let xan = "i love pie";
-addItem(xan);
-removeItem(0);
-red();
-stripe();
 //insert your implementations here for...
 // FIB
 function fib(n){
@@ -114,16 +107,22 @@ gcd = function(a, b){
   if(a > b){
       smallest = b;
   }
+  counter = 0;
   // console.log("smallest is " + smallest);
   for(let i = smallest; i >= 1; i--){
       // console.log("i is " + i);
       // console.log("a % i is " + a%i)
       // console.log("b % i is " + b%i)
       if(a % i == 0 && b % i == 0){
-          return i;
+          counter = i;
+          break;
       }
   }
+  
+  var list = document.getElementById("thelist");
+  var newitem = document.createElement("li");
+  newitem.innerHTML = counter;
+  list.appendChild(newitem);
 }
 
-addItem("The GCD of 1280 and 146 is " + gcd(1280,146));
-addItem()
+gcd(1290, 10);

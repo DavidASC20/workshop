@@ -1,0 +1,5 @@
+document.createElement(<HTML TAG LINE>)
+element.setAttribute(<NAME>, <VALUE>)
+element.getAttribute(<NAME>)
+
+${}  (format str in python)
