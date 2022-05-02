@@ -1,0 +1,78 @@
+
+
+Notes
+
+Modeling for RDBMS
+Step 1: Define Schema
+
+Step 2: Develop application and queries
+
+Data dictates how you develop your application, work around the data.
+As data model evolves, performance drops.
+
+
+
+
+Data Modeling with MongoDB
+1. Develop the application
+2. Define the Data Model
+3. Improve the application
+4. Improve the Data Model
+
+Last 2 steps compliment each other, as one improves, the other should improve with it.
+Allows the way you use your date to dictate how it is stored, provides many design options.
+- Many design options
+- Designed for the usage pattern
+- Data model evolution is easy
+- Can evolve wihtout any downtime
+
+
+Data model is defined at the application level.
+Design is part of each phase of the application lifetime
+The data that your application needs and the applications read and write usage of the data affect the data model 
+
+
+
+
+
+Step by Step Iteration of the Data Model
+- Evaluate the application workload(potential application workload, Business domain expertise, Current and predicted scenario, Production logs and Stats)
+Data size
+List of operations ranked by importance
+- Map out entities and their relationships
+gets CRD: Collection relationship Diagram
+
+- Finalize the data model for each Collection
+Identify and apply relevant design patterns
+
+Final Product: 
+Collections with documents fields and shapes for each
+Data size
+Database queries and indexes
+Current operations assumptions and growth projections
+
+
+
+
+
+Link or Embed?
+    Relationships:
+    One-to-one
+    One-to-Many
+    Many-to-Many
+
+    One to One
+    Linking - Linking two separate things
+    Embed - Embedding one thing into the opther to make them part of the same
+
+    One to Many
+    can link parent to child or child to parent
+    ex: link all books in authors data, or link author in each books data
+
+    Many to Many
+    link on both sides, book has array and authors have array
+
+    Questions to ask
+    - How often does the embedded information get accessed?
+    - Is the data queried using the embdded information
+    - Does the mebedded information change often?
