@@ -29,7 +29,7 @@ Allows the way you use your date to dictate how it is stored, provides many desi
 
 Data model is defined at the application level.
 Design is part of each phase of the application lifetime
-The data that your application needs and the applications read and write usage of the data affect the data model 
+The data that your application needs and the applications read and write usage of the data affect the data model
 
 
 
@@ -45,7 +45,7 @@ gets CRD: Collection relationship Diagram
 - Finalize the data model for each Collection
 Identify and apply relevant design patterns
 
-Final Product: 
+Final Product:
 Collections with documents fields and shapes for each
 Data size
 Database queries and indexes
@@ -76,3 +76,47 @@ Link or Embed?
     - How often does the embedded information get accessed?
     - Is the data queried using the embdded information
     - Does the mebedded information change often?
+
+
+JSON = JavaScript Standard Object Notation
+- Format starts and ends with curly braces{}
+- Separates each key and value with a colon:
+- Separates each key value pair with a comma,
+- keys must be surrounded with quotation marks
+- MongoDB calls "keys" as "fields"
+
+Pros and Cons
+Pros
+- Friendly
+- Readable
+- Familiar
+Cons
+- Text-based
+- Space-consuming
+- Limited
+
+BSON - Binary JSON, a binary representation of JSON
+Optimized for speed, efficiency and Space
+
+MongoDB stores data in BSON, but JSON can be natively stored
+and retrieved with MongoDB as well.
+
+Whether you export in BSON or JSON depends on your needs
+for the data
+
+JSON - mongoimport mongooutport
+BSON - mongorestore mongodump
+
+export
+mongodump --uri "<Atlas Cluster URI>"  (BSON)
+
+
+
+mongoexport --uri "<Atlas Cluster URI>"
+            --collection=<collection name>
+            --out=<filename>.json
+
+
+URI string
+Uniform Resource Identifier
+srv - establishes a secure connection
