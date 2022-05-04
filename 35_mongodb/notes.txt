@@ -115,8 +115,36 @@ mongodump --uri "<Atlas Cluster URI>"  (BSON)
 mongoexport --uri "<Atlas Cluster URI>"
             --collection=<collection name>
             --out=<filename>.json
+import
+mongorestore --uri "<Atlas CLuster  URI>" (Imports data in BSON dump)
+             --drop dump
+
+mongoimport --uri "<Atlas CLuster URI>" (Imports data in JSON)
+            --drop=<filename>.json
+
 
 
 URI string
 Uniform Resource Identifier
 srv - establishes a secure connection
+
+
+
+Data Explorer
+
+Namespace - The concatenation of the database name and collection name
+Queries must use valid JSON
+
+Find Command
+
+show dbs - shows a list of databases that are in the cluster
+use - switches the database
+show collections - shows the collections in the database
+db.collection.find({json}) - specify the database and collection,
+
+it - iterates through a cursor
+cursor - pointer to result set of query
+pointer - direct address of mem location
+
+.count - gives the number of documents that match the given query
+.pretty - makes json easier to read
