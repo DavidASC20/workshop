@@ -146,5 +146,85 @@ it - iterates through a cursor
 cursor - pointer to result set of query
 pointer - direct address of mem location
 
-.count - gives the number of documents that match the given query
+For example, you run the find command, then you see the first twenty results from the query.
+From there, you would use it to go to the next twenty and so on
+
+.count - gives the number of documents that match the given query can use after .find({query})
 .pretty - makes json easier to read
+
+
+CHAPTER 3
+Inserting New Documents
+Atlas UI
+insert document button on thew top right
+can use either json notation or edit using default view.  
+Every document has an _id value, and each document must have a different _id field.
+hit tab or use mouse to move onto next line.
+can change data type on the side
+ObjectID() - Default value for the _id field unless otherwise specified
+
+Inserting Documents: insert() and Errors
+db.collection.insert({query}) - Insert COmmand
+cannot replicate same object ids 
+--drop removes the collection before adding it back, so that there will be no duplicate key errors
+
+Steps for smth
+- connect to cluster 
+- switch databases
+- get random document
+findOne() - good to use when looking for some document that matches the query or to get an idea of the
+shape of the documents in this collection.
+- copy random document
+- insert this rand doc to see if duplicate key error pops up
+nInserted - amt of documents after the error that got written
+WriteError - shows that writing the document to the collection did not succeed
+WriteResult - shows the amt of inserted documents
+_id gets added automatically upon insertion
+
+Inseting Documents:Order
+Can add multiple by adding the documents into an array for Ex =  ([{"test": 1}, {"test":2}, {"test":3}])
+BulkWriteResult({}) - returns results of bulk write
+if order = true, if there is an error with one of the documents in the array, the documents afterward will
+not be written.
+add {"ordered": false} after the bracket, but inside the parentheses.
+
+Updating Documents:
+subdocuments - address field is an object or document
+can have array of objects
+can edit documents with the pencil icon
+keep all types the same
+
+Updating Documnets: mongo shell
+One - updateOne() if multiple documnets are found, only the one that is found first will be updated
+Many - updateMany() will update all documents that match a given query
+
+
+
+db.collection.updateMany({query you are looking for}, {"$inc": {"pop": 10}})
+"$inc" is an MQL update operator, and increments the value of the specified field by the given amt.
+You can also separate each filed u want to increment by commas.
+$set updates value of given field with specified value.  It can also implicitely create fields.
+$push adds elemenets to the array field, or adds an array field to the document with the specified value
+
+
+Deleting Documents and Collections
+Garbage can button in Data Explorer.  Can delete db, collection or document.
+One
+- deleteOne()
+Many 
+- deleteMany()
+- drop() for collections
+
+Query Operators - Comparison
+
+MQL Operators
+Update Operators
+Ex - $inc, $set, #unset
+Eanbles us to modiify data in the database
+
+Query Operators
+Provide additional ways to locate data within the database
+
+$ has multiple uses 
+Precedes MQL Operators
+Precedes Aggregation pipeline stages 
