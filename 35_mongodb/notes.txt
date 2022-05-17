@@ -157,7 +157,7 @@ CHAPTER 3
 Inserting New Documents
 Atlas UI
 insert document button on thew top right
-can use either json notation or edit using default view.  
+can use either json notation or edit using default view.
 Every document has an _id value, and each document must have a different _id field.
 hit tab or use mouse to move onto next line.
 can change data type on the side
@@ -165,11 +165,11 @@ ObjectID() - Default value for the _id field unless otherwise specified
 
 Inserting Documents: insert() and Errors
 db.collection.insert({query}) - Insert COmmand
-cannot replicate same object ids 
+cannot replicate same object ids
 --drop removes the collection before adding it back, so that there will be no duplicate key errors
 
 Steps for smth
-- connect to cluster 
+- connect to cluster
 - switch databases
 - get random document
 findOne() - good to use when looking for some document that matches the query or to get an idea of the
@@ -211,7 +211,7 @@ Deleting Documents and Collections
 Garbage can button in Data Explorer.  Can delete db, collection or document.
 One
 - deleteOne()
-Many 
+Many
 - deleteMany()
 - drop() for collections
 
@@ -225,6 +225,15 @@ Eanbles us to modiify data in the database
 Query Operators
 Provide additional ways to locate data within the database
 
-$ has multiple uses 
+$ has multiple uses
 Precedes MQL Operators
-Precedes Aggregation pipeline stages 
+Precedes Aggregation pipeline stages
+
+Comparison Operators
+$eq = Equal to   $ne = Not Equal to
+$gt > Greater than   $lt < Less than
+$gte >= Greater than or Equal to
+$lte <= Less than or Equal to
+{ <field>: {<operator>: <value>}}
+
+{"tripduration": { "$lte":70}}
